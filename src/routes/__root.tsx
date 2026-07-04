@@ -71,7 +71,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "QianTron — Premium Machinery. Seamless Logistics." },
+      { title: "QianTron — Premium Machinery. Seamless Logistics. Delivered." },
       {
         name: "description",
         content:
@@ -79,7 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "QianTron" },
       { name: "theme-color", content: "#111111" },
-      { property: "og:title", content: "QianTron — Engineering Trust. Delivering Power." },
+      { property: "og:title", content: "QianTron — Premium Machinery. Seamless Logistics. Delivered." },
       {
         property: "og:description",
         content:
@@ -87,6 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "QianTron — Premium Machinery. Seamless Logistics. Delivered." },
+      { name: "description", content: "From global sourcing to final delivery, QianTron orchestrates every stage of your machinery acquisition — sourcing, inspection, RoRo shipping, customs, and inland transport." },
+      { property: "og:description", content: "From global sourcing to final delivery, QianTron orchestrates every stage of your machinery acquisition — sourcing, inspection, RoRo shipping, customs, and inland transport." },
+      { name: "twitter:description", content: "From global sourcing to final delivery, QianTron orchestrates every stage of your machinery acquisition — sourcing, inspection, RoRo shipping, customs, and inland transport." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Jcimh47z5OaAzT29aQHA4QC2mKh2/social-images/social-1783173972972-555.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Jcimh47z5OaAzT29aQHA4QC2mKh2/social-images/social-1783173972972-555.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
