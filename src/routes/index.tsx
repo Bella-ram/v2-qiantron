@@ -342,18 +342,10 @@ function Difference() {
 
 /* ---------------- Section 03 — Fleet ---------------- */
 
-const fleet = [
-  { name: "Excavators", spec: "20T — 90T", origin: "JP · CN", img: volvoImg.url, tag: "Earthmoving" },
-  { name: "Wheel Loaders", spec: "3m³ — 6m³", origin: "JP", img: wheelLoaderImg.url, tag: "Material handling" },
-  { name: "Bulldozers", spec: "D6 — D11", origin: "USA · CN", img: dozerImg.url, tag: "Grading" },
-  { name: "Mining Equipment", spec: "Drill & haul", origin: "USA · SE", img: trackDrillImg.url, tag: "Extraction" },
-  { name: "Telehandlers & Forklifts", spec: "3T — 20T", origin: "UK · CN", img: telehandlerImg.url, tag: "Sitework" },
-  { name: "Cranes", spec: "25T — 750T", origin: "DE · CN", img: craneMobileImg.url, tag: "Lifting" },
-  { name: "Mobile Cranes", spec: "Rough terrain", origin: "IN · JP", img: mobileCraneImg.url, tag: "Field lift" },
-  { name: "Prime Movers · Tippers · Haulage", spec: "6x4 · 8x4", origin: "CN · DE", img: factoryImg.url, tag: "Fleet" },
-];
-
 function Fleet() {
+  const { data } = useSuspenseQuery(productsQueryOptions);
+  const fleet: Product[] = data.products;
+
   return (
     <section id="fleet" className="relative py-28 md:py-40">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
