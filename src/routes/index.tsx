@@ -31,14 +31,8 @@ import {
 
 import logoAsset from "@/assets/logo.png.asset.json";
 import wordmarkAsset from "@/assets/wordmark.png.asset.json";
-import volvoImg from "@/assets/volvo-excavators.jpg.asset.json";
-import wheelLoaderImg from "@/assets/wheel-loader.jpg.asset.json";
-import trackDrillImg from "@/assets/track-drill.jpg.asset.json";
-import telehandlerImg from "@/assets/telehandler.jpg.asset.json";
-import mobileCraneImg from "@/assets/mobile-crane.jpg.asset.json";
-import craneMobileImg from "@/assets/crane-mobile.jpg.asset.json";
-import factoryImg from "@/assets/factory-line.jpg.asset.json";
 import dozerImg from "@/assets/cat-dozer.jpg.asset.json";
+
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => context.queryClient.ensureQueryData(productsQueryOptions),
